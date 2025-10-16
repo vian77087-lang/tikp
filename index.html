@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>PERPUSTAKAAN DIGITAL SMK NEGERI RENGEL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Tautkan file CSS eksternal -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Tautkan font Inter dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: cornsilk;">
+
+    <div class="container">
+        <h1>PERPUSTAKAAN DIGITAL</h1> 
+        
+        <!-- Placeholder Image untuk Logo -->
+        <img src="https://placehold.co/250x250/3f51b5/ffffff?text=Logo+Perpus" alt="Logo PERPUSTAKAAN" width="250" height="250" class="logo-image">
+        
+        <form onsubmit="validasiLogin(event)">
+            <label class="account-label">Masuk dengan Akun:</label>
+            
+            <div class="form-group">
+                <label for="Username">Username:</label>
+                <div class="form-input-control"> 
+                    <input type="text" name="Username" id="Username" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <div class="form-input-control"> 
+                    <div class="password-container">
+                        <input type="password" name="password" id="password" required>
+                        <!-- Tombol ganti visibilitas password -->
+                        <button type="button" id="togglePass" class="toggle-password" onclick="togglePasswordVisibility()">
+                            <!-- Ikon mata tertutup (emoji) -->
+                            &#x1F576; 
+                        </button> 
+                    </div>
+                </div>
+            </div>
+            
+            <button type="submit" class="button">Login</button>
+            
+            <div class="divider">ATAU</div>
+            
+            <button type="button" class="google-button" onclick="googleLogin()">
+                <span class="google-icon">G</span>
+                Masuk dengan Google
+            </button>
+        </form>
+    </div>
+
+    <!-- Kotak Pesan Kustom (Menggantikan Alert) -->
+    <div id="messageBox" class="modal">
+        <div class="modal-content">
+            <p id="messageText"></p>
+        </div>
+    </div>
+    
+    <!-- Tautkan file JavaScript eksternal -->
+    <script src="script.js"></script> 
+</body>
+</html>

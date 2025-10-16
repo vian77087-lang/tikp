@@ -45,8 +45,8 @@ h1 {
     height: auto;
     border-radius: 50%; /* Membuat logo bulat */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    width: 200px; /* Diperkecil sedikit */
-    height: 200px;
+    width: 350px; /* Diperkecil sedikit */
+    height: 350px;
 }
 
 /* Perbaikan untuk form agar lebih rapi */

@@ -39,7 +39,7 @@ h1 {
 }
 
 /* Mengatur agar gambar dan form memiliki margin yang baik */
-.logo-image {
+.img {
     margin-bottom: 30px; /* Jarak antara logo dan form */
     max-width: 100%;
     height: auto;
@@ -335,7 +335,7 @@ input[type="text"]:focus, input[type="password"]:focus {
     }
     
     /* Kurangi ukuran gambar, namun lebih besar dari sebelumnya */
-    .logo-image {
+    .img {
         width: 150px; 
         height: 150px;
         margin-bottom: 20px;
